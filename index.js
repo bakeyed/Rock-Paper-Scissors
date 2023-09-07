@@ -1,23 +1,23 @@
 const displayPlayerChoice = document.getElementById("playerChoice");
 const displayComputerChoice = document.getElementById("computerChoice");
-const choice = document.querySelector("#buttons");
+const buttons = document.querySelector("#buttons");
 const displayWinner = document.getElementById("displayText");
 let pOption;
 let cOption;
 
-choice.children[0].addEventListener("click", () => {
+buttons.children[0].addEventListener("click", () => {
   displayPlayerChoice.textContent = "Player choice: Rock";
   pOption = "r";
   computerChoice();
   getWinner(cOption, pOption);
 });
-choice.children[1].addEventListener("click", () => {
+buttons.children[1].addEventListener("click", () => {
   displayPlayerChoice.textContent = "Player choice: Paper";
   pOption = "p";
   computerChoice();
   getWinner(cOption, pOption);
 });
-choice.children[2].addEventListener("click", () => {
+buttons.children[2].addEventListener("click", () => {
   displayPlayerChoice.textContent = "Player choice: Scissors";
   pOption = "s";
   computerChoice();
